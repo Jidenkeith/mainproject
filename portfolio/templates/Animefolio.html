@@ -1,0 +1,138 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animefolio</title>
+
+    <link rel="stylesheet" href="{% static 'anime.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--navbar-->
+
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">EcodeMux portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--MAIN BANNER-->
+
+
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero-title">Hi there, welcome to my page, its keith at your service!</h2>
+                <p class="hero-desc">I am a coding lover, just like most of you.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--number 2-->
+
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1>About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="{% static 'images/keits.jpg' %}" class="imageAboutPage" alt="">
+            </div>
+
+            <div class="col-lg-8">
+                <p>EcodeMux is a company created mainly for web programming services, android app development and many more tech related services.</p>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Name: Keith sile saekwo</li>
+                        <li>Age: 21</li>
+                        <li>Occupation: programmer</li>
+                    </ul>
+                </div>
+                <div class="row mt-3">
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur ea laudantium magni natus odit quisquam veritatis. Consectetur dignissimos dolor, facere incidunt ipsam laudantium minima nam natus quod reiciendis veritatis!</span><span>Accusantium atque distinctio doloribus eum itaque iusto maxime nemo neque nihil nulla officiis optio possimus recusandae soluta temporibus ullam, voluptatum! Ab error harum in incidunt modi possimus provident, quas temporibus?</span></p>
+
+                </div>
+
+
+            </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div>
+                   <div class="card servicesText">
+                       <div class="card-body">
+                           <i class="fas servicesIcon fa-clock"></i>
+                           <h4 class="card-title mt-3">Web Development</h4>
+                           <p class="card-text mt-3">Building and maintainance of web pages are a priority.Great work is done behind the scenes to make sure web pages are upto date.</p>
+                       </div>
+                   </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                <div>
+                   <div class="card servicesText">
+                       <div class="card-body">
+                           <i class="fas servicesIcon fa-layer-group"></i>
+                           <h4 class="card-title mt-3">Android App Development</h4>
+                           <p class="card-text mt-3">Due to th fragmentation of this ecosystem, an android developer must pay attention to the application's compatibility with multipple versions of Android and device types.That's what we do here at EcodeMux and co</p>
+                       </div>
+                   </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+</section>
+
+
+</body>
+</html>
